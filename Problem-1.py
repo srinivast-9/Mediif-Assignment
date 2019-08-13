@@ -4,8 +4,8 @@ def group_by_owners(idict):
     for owner in owners:
         odict.update({owner: []})
 
-    for file, owner in idict.items():
-        odict[owner].append(file)
+    for filename, owner in idict.items():
+        odict[owner].append(filename)
 
     print(odict)
     return odict
