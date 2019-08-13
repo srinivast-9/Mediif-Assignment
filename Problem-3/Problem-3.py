@@ -1,7 +1,6 @@
-with open('errorwarning.txt', 'w') as few:
-    with open('log.txt', 'r') as fl:
-        for line in fl.readlines():
+with open('outputlog.txt', 'w') as fout:
+    with open('inputlog.txt', 'r') as fin:
+        for line in fin.readlines():
             if 'error'.lower() in line or 'warning'.lower() in line:
-                    few.writelines(line)
-                    print(line)
+                    fout.write(line)
 

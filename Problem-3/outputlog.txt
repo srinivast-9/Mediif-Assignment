@@ -1,0 +1,2 @@
+13082019 040306 WARNING: This is warning level log.
+13082019 040314 ERROR: This is error level log.
